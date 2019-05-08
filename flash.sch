@@ -398,4 +398,46 @@ Wire Wire Line
 	6650 4050 8300 4050
 Wire Wire Line
 	7800 3700 8300 3700
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5CD3182A
+P 9750 2650
+F 0 "J2" H 9830 2692 50  0000 L CNN
+F 1 "Conn_01x05" H 9830 2601 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 9750 2650 50  0001 C CNN
+F 3 "~" H 9750 2650 50  0001 C CNN
+	1    9750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2850 9350 2850
+Wire Wire Line
+	9350 2850 9350 3050
+$Comp
+L power:GND #PWR07
+U 1 1 5CD34B89
+P 9350 3050
+F 0 "#PWR07" H 9350 2800 50  0001 C CNN
+F 1 "GND" H 9355 2877 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2750 9350 2750
+Text Label 9350 2750 2    50   ~ 0
+GPIO0
+Wire Wire Line
+	9550 2650 9350 2650
+Text Label 9350 2650 2    50   ~ 0
+RX
+Wire Wire Line
+	9550 2550 9350 2550
+Text Label 9350 2550 2    50   ~ 0
+TX
+Wire Wire Line
+	9550 2450 9350 2450
+Text Label 9350 2450 2    50   ~ 0
+EN
 $EndSCHEMATC
