@@ -20,7 +20,7 @@ U 1 1 5CD01C5A
 P 5800 3500
 F 0 "U1" H 5800 4581 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 5800 4490 50  0000 C CNN
-F 2 "digikey-footprints:QFN-24-1EP_4x4mm" H 6250 2700 50  0001 L CNN
+F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 6250 2700 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5850 2450 50  0001 C CNN
 	1    5800 3500
 	1    0    0    -1  
@@ -385,7 +385,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 2600 5800 2150
 Wire Wire Line
-	5800 2150 5500 2150
+	5800 2150 5700 2150
 Wire Wire Line
 	7800 2450 8300 2450
 Wire Wire Line
@@ -440,4 +440,10 @@ Wire Wire Line
 	9550 2450 9350 2450
 Text Label 9350 2450 2    50   ~ 0
 EN
+Wire Wire Line
+	5700 2400 5700 2150
+Connection ~ 5700 2400
+Connection ~ 5700 2150
+Wire Wire Line
+	5700 2150 5500 2150
 $EndSCHEMATC
