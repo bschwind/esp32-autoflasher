@@ -237,87 +237,53 @@ Wire Wire Line
 $Comp
 L Device:R R4
 U 1 1 5CD352C9
-P 7150 3500
-F 0 "R4" V 6943 3500 50  0000 C CNN
-F 1 "10 kΩ" V 7034 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7080 3500 50  0001 C CNN
-F 3 "~" H 7150 3500 50  0001 C CNN
-	1    7150 3500
+P 7500 1950
+F 0 "R4" V 7293 1950 50  0000 C CNN
+F 1 "10 kΩ" V 7384 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7430 1950 50  0001 C CNN
+F 3 "~" H 7500 1950 50  0001 C CNN
+	1    7500 1950
 	0    1    1    0   
 $EndComp
-$Comp
-L Transistor_BJT:PN2222A Q2
-U 1 1 5CD37793
-P 7700 3500
-F 0 "Q2" H 7890 3454 50  0000 L CNN
-F 1 "PN2222A" H 7890 3545 50  0000 L CNN
-F 2 "mmbt2222alt1g:mmbt2222alt1g" H 7900 3425 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7700 3500 50  0001 L CNN
-	1    7700 3500
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	7300 3500 7500 3500
+	7650 1950 7850 1950
 $Comp
 L Device:R R2
 U 1 1 5CD3C513
-P 7150 2650
-F 0 "R2" V 6943 2650 50  0000 C CNN
-F 1 "10 kΩ" V 7034 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7080 2650 50  0001 C CNN
-F 3 "~" H 7150 2650 50  0001 C CNN
-	1    7150 2650
+P 7500 1100
+F 0 "R2" V 7293 1100 50  0000 C CNN
+F 1 "10 kΩ" V 7384 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7430 1100 50  0001 C CNN
+F 3 "~" H 7500 1100 50  0001 C CNN
+	1    7500 1100
 	0    1    1    0   
 $EndComp
-Text Label 8300 3700 0    50   ~ 0
+Text Label 8650 2150 0    50   ~ 0
 EN
-Text Label 8300 2450 0    50   ~ 0
+Text Label 8650 900  0    50   ~ 0
 GPIO0
 Wire Wire Line
 	6550 3300 6550 4150
-Wire Wire Line
-	6550 4150 8300 4150
-Text Label 8300 4150 0    50   ~ 0
+Text Label 6850 4150 0    50   ~ 0
 TX
-$Comp
-L Transistor_BJT:PN2222A Q1
-U 1 1 5CD387D0
-P 7700 2650
-F 0 "Q1" H 7890 2696 50  0000 L CNN
-F 1 "PN2222A" H 7890 2605 50  0000 L CNN
-F 2 "mmbt2222alt1g:mmbt2222alt1g" H 7900 2575 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7700 2650 50  0001 L CNN
-	1    7700 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7300 2650 7500 2650
+	7650 1100 7850 1100
 Wire Wire Line
-	6400 3500 6750 3500
+	7100 1950 7350 1650
 Wire Wire Line
-	6750 3500 7000 3200
-Connection ~ 6750 3500
+	7100 1950 7350 1950
 Wire Wire Line
-	6750 3500 7000 3500
+	7100 1100 7350 1100
 Wire Wire Line
-	6750 2650 7000 2650
+	7100 1100 7350 1400
 Wire Wire Line
-	6750 2650 7000 2950
+	8150 1300 7850 1650
 Wire Wire Line
-	6400 3100 6650 3100
+	7850 1650 7350 1650
 Wire Wire Line
-	6650 3100 6650 2650
+	7350 1400 7850 1400
 Wire Wire Line
-	6650 2650 6750 2650
-Connection ~ 6750 2650
-Wire Wire Line
-	7800 2850 7500 3200
-Wire Wire Line
-	7500 3200 7000 3200
-Wire Wire Line
-	7000 2950 7500 2950
-Wire Wire Line
-	7500 2950 7800 3300
+	7850 1400 8150 1750
 Wire Wire Line
 	5200 3800 5000 3800
 Wire Wire Line
@@ -387,17 +353,15 @@ Wire Wire Line
 Wire Wire Line
 	5800 2150 5700 2150
 Wire Wire Line
-	7800 2450 8300 2450
+	8150 900  8650 900 
 Wire Wire Line
 	6400 3200 6650 3200
 Wire Wire Line
 	6650 3200 6650 4050
-Text Label 8300 4050 0    50   ~ 0
+Text Label 6850 4050 0    50   ~ 0
 RX
 Wire Wire Line
-	6650 4050 8300 4050
-Wire Wire Line
-	7800 3700 8300 3700
+	8150 2150 8650 2150
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5CD3182A
@@ -430,11 +394,11 @@ Text Label 9350 2750 2    50   ~ 0
 GPIO0
 Wire Wire Line
 	9550 2650 9350 2650
-Text Label 9350 2650 2    50   ~ 0
+Text Label 9350 2550 2    50   ~ 0
 RX
 Wire Wire Line
 	9550 2550 9350 2550
-Text Label 9350 2550 2    50   ~ 0
+Text Label 9350 2650 2    50   ~ 0
 TX
 Wire Wire Line
 	9550 2450 9350 2450
@@ -446,4 +410,66 @@ Connection ~ 5700 2400
 Connection ~ 5700 2150
 Wire Wire Line
 	5700 2150 5500 2150
+Text Label 6850 3100 0    50   ~ 0
+RTS
+Wire Wire Line
+	6400 3500 6850 3500
+Text Label 6850 3500 0    50   ~ 0
+DTR
+Wire Wire Line
+	6400 3100 6850 3100
+Wire Wire Line
+	7100 1950 6950 1950
+Connection ~ 7100 1950
+Wire Wire Line
+	7100 1100 6950 1100
+Connection ~ 7100 1100
+Text Label 6950 1100 2    50   ~ 0
+RTS
+Text Label 6950 1950 2    50   ~ 0
+DTR
+Wire Wire Line
+	6650 4050 6850 4050
+Wire Wire Line
+	6550 4150 6850 4150
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222ALT1G Q1
+U 1 1 5CFDD0F3
+P 8050 1100
+F 0 "Q1" H 8238 1153 60  0000 L CNN
+F 1 "MMBT2222ALT1G" H 8238 1047 60  0000 L CNN
+F 2 "mmbt2222alt1g:mmbt2222alt1g" H 8250 1300 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MMBT2222LT1-D.PDF" H 8250 1400 60  0001 L CNN
+F 4 "MMBT2222ALT1GOSCT-ND" H 8250 1500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222ALT1G" H 8250 1600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8250 1700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 8250 1800 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/MMBT2222LT1-D.PDF" H 8250 1900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/MMBT2222ALT1G/MMBT2222ALT1GOSCT-ND/1139806" H 8250 2000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SOT23" H 8250 2100 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8250 2200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8250 2300 60  0001 L CNN "Status"
+	1    8050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222ALT1G Q2
+U 1 1 5CFEB52D
+P 8050 1950
+F 0 "Q2" H 8238 1897 60  0000 L CNN
+F 1 "MMBT2222ALT1G" H 8238 2003 60  0000 L CNN
+F 2 "mmbt2222alt1g:mmbt2222alt1g" H 8250 2150 60  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MMBT2222LT1-D.PDF" H 8250 2250 60  0001 L CNN
+F 4 "MMBT2222ALT1GOSCT-ND" H 8250 2350 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222ALT1G" H 8250 2450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 8250 2550 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 8250 2650 60  0001 L CNN "Family"
+F 8 "http://www.onsemi.com/pub/Collateral/MMBT2222LT1-D.PDF" H 8250 2750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/MMBT2222ALT1G/MMBT2222ALT1GOSCT-ND/1139806" H 8250 2850 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SOT23" H 8250 2950 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 8250 3050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8250 3150 60  0001 L CNN "Status"
+	1    8050 1950
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
