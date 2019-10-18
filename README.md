@@ -1,6 +1,6 @@
 # esp32-autoflasher
 
-Based on the CP2102N USB-UART serial converter.
+KiCad PCB based on the CP2102N USB-UART serial converter. Connect `EN`, `RX`, `TX`, `IO0`, and `GND` to their respective pins on the ESP32 (don't forget to swap the `RX` and `TX` pins!)
 
 ## Required Parts
 
