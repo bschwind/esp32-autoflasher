@@ -1,6 +1,8 @@
 # esp32-autoflasher
 
-KiCad PCB based on the CP2102N USB-UART serial converter. Connect `EN`, `RX`, `TX`, `IO0`, and `GND` to their respective pins on the ESP32 (don't forget to swap the `RX` and `TX` pins!)
+KiCad PCB based on the CP2102N USB-UART serial converter. This implements the "auto reset" circuits of most ESP32 dev boards. You can run things like esp-idf's `make flash` or flash code from the Arduino IDE without having to hold down any buttons.
+
+Connect `EN`, `RX`, `TX`, `IO0`, and `GND` to their respective pins on the ESP32 (don't forget to swap the `RX` and `TX` pins!) and make sure you have the Silicon Labs CP210x driver installed on your OS.
 
 ## Required Parts
 
@@ -28,7 +30,6 @@ KiCad PCB based on the CP2102N USB-UART serial converter. Connect `EN`, `RX`, `T
 
 ### PCB Layout
 ![pcb](images/pcb.png)
-
 
 ### Assembled
 ![assembled](images/assembled.jpg)
