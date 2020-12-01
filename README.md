@@ -4,6 +4,8 @@ KiCad PCB based on the CP2102N USB-UART serial converter. This implements the "a
 
 Connect `EN`, `RX`, `TX`, `IO0`, and `GND` to their respective pins on the ESP32 (don't forget to swap the `RX` and `TX` pins!) and make sure you have the Silicon Labs CP210x driver installed on your OS.
 
+You can order this PCB on [OshPark](https://oshpark.com/shared_projects/q04gDLKl)
+
 ## Required Parts
 
 (All resistors and capacitors are size 1608 metric)
